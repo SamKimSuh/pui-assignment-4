@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bun Bun Bake Shop</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet">
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body onload="loadCart()">
+    <header>
+        <h1>Bun Bun Bake Shop</h1>
+    </header>
+
+    <!-- place order button 1-->
+    <div id="order_button1">
+        <button class="order-cart">Place My Order</button>
+    </div>
+
+    <!-- the cart contains columns for: amount of items, item, flavors, number of buns, and price. -->
+    <fieldset id="cart">
+        <table id="cart_table">
+            <tr>
+                <th>Amount</th>
+                <th>Flavor 1</th>
+                <th>Flavor 2</th>
+                <th>Flavor 3</th>
+                <th>Number Boxes</th>
+                <th>Price</th>
+            </tr>
+        </table>
+
+        <!-- place order button 2-->
+        <div>
+            <div>Total Cart =<span id="total_cart"></span></div>
+        </div>
+    </fieldset>
+
+    <!-- place order -->
+    <div id="order_button2">
+        <button id="order_cart">Place My Order</button>
+    </div>
+</body>
+
+</html>
