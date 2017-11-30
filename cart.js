@@ -53,7 +53,8 @@ $(document).ready(function() {
         var itemIndex = itemId.substr(6);
         var intIndex = parseInt(itemIndex);
         var deleteRow = "#row" + itemIndex;
-
+        
+        //call populateArray() after you've deleted the item from local storage
         populateArray();
         
         totalC -= cartOrders[intIndex].price;
